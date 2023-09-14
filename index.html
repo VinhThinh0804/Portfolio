@@ -43,7 +43,6 @@
                     My love for coding extends to participating in coding challenges, where I embrace the thrill of problem-solving and pushing my skills to new 
                     heights. With a commitment to continuous learning and a creative mindset, I am dedicated to making a meaningful impact in the dynamic world 
                     of software development</p>
-
                     <div class="tab-titles">
                         <p class = "tab-links active-link" onclick="opentap('skills')">Skills</p>
                         <p class = "tab-links" onclick="opentap('experience')">Experience</p>
@@ -105,7 +104,7 @@
 
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My Work</h1>
+        <h1 class="sub-title">My Love</h1>
         <div class="work-list">
             <div class="work">
                 <img src="anh/work-1.png">
@@ -148,7 +147,7 @@
                 <a href="anh/NguyenTrinhVinhThinh-CV.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name = "Name" placeholder="Your Name" required>
                     <input type="email" name = "Email" placeholder="Your Email" required>
                     <textarea name="Massage" rows="6" placeholder="Your Massage" required></textarea>
@@ -188,5 +187,16 @@
     }
 </script>
 
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzfJLlCtFM4WS9WD5UKNJmT5HVhn0xwWUrOYCvi4I08-JMD5V_wmWwIfJc3bd9QFyza2w/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
