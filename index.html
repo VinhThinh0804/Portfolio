@@ -15,10 +15,10 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                    <img class="logo-img" src="src/logo.png">
+                    <img class="logo-img" src="src/assets/logo.png">
                 </div>
                 <ul id="sidemenu">
-                    <li><a href="#header">Blog</a></li>
+                    <!-- <li><a href="#header">Blog</a></li> -->
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Projects</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
@@ -36,14 +36,13 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="src/about-img.png">
+                <img src="src/assets/about-img.png">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
                 <p>I am currently a student at University of Information Technology. 
-                    I have a profound passion for both web and app development, constantly seeking opportunities to create innovative and user-centric solutions. 
-                    My love for coding extends to participating in coding challenges, where I embrace the thrill of problem-solving and pushing my skills to new 
-                    heights.</p>
+                    I have a profound passion for both software development, constantly seeking opportunities to create innovative and user-centric solutions. 
+                     Eager to contribute to innovative projects and grow professionally as a frontend developer</p>
                     <div class="tab-titles">
                         <p class = "tab-links active-link" onclick="opentap('education')">Education</p>
                         <p class = "tab-links" onclick="opentap('skills')">Skills</p>
@@ -57,16 +56,15 @@
                     </div>
                     <div class="tab-contents" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br>Figma</li>
-                            <li><span>Languages</span><br>SQL, C#, Java, Javascript/Typescript</li>
-                            <li><span>Framworks/Technologies</span><br>Git, ReactJS, Tailwind CSS, MongoDB, JWT, Expess, NodeJS, Postman, NoSQL HTML/CSS</li>
+                            <li><span>Framworks/Technologies</span><br>ReactJS, NextJS, Tailwind CSS, NodeJS, NestJS, ExpessJS</li>
+                            <li><span>Languages</span><br>Javascript/Typescript, Java, C#, SQL</li>
+                            <li><span>Knowledge</span><br>OOP, Design Patterns, Software Architecture</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="certificates">
                         <ul>
                             <li><span>English</span><br>TOEIC 930</li>
                             <li><span>FPT Academy</span><br>React Short Course</li>
-                            <li><span>Freecodecamp</span><br>Back-end Development</li>
                         </ul>
                     </div>
             </div>
@@ -74,26 +72,84 @@
     </div>
 </div>
 
-<div id="portfolio" class="fade-in">
+<div id="portfolio2" class="fade-in">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="project-list">
+            <div class="project fade-in">
+                <div class="project-img">
+                    <img src="src/assets/work-4.png">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Ticket Booking</h3>
+                    <p class="project-description">  Developed an online event ticket booking system allowing users to search events, view
+                        seat availability, and make secured reservations. The platform supports event creation, seat and
+                        ticket management, and refund processing. Users receive real-time notifications for schedule
+                        changes. Designed to enhance convenience and efficiency for both customers and organizers.</p>
+                    <div class="project-links">
+                        <div class="layer-link"></div>
+                        <a class="project-link" target="_blank" href="https://github.com/DTTri/ticket-booking">View work</a>
+                        <img class="project-icon" src="src/assets/arrow.svg" alt="Arrow">
+                    </div>
+                </div>
+            </div>
+            <div class="project fade-in">
+                <div class="project-img">
+                    <img src="src/assets/work-2.png">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">BetterTOEIC</h3>
+                    <p class="project-description"> Developed an interactive TOEIC practice website covering all four language skills. The
+                        platform offers personalized learning paths, diverse mock tests, a discussion forum, and vocabulary
+                        learning modules. Integrated AI-powered assessment for Speaking and Writing, including automated
+                        scoring, feedback analysis, and a chatbot for interactive speaking practice.</p>
+                    <div class="project-links">
+                        <div class="layer-link"></div>
+                        <a class="project-link" target="_blank" href="https://bettertoeic.id.vn/">View work</a>
+                        <img class="project-icon" src="src/assets/arrow.svg" alt="Arrow">
+                    </div>
+                </div>
+            </div>
+            <div class="project fade-in">
+                <div class="project-img">
+                    <img src="src/assets/work-1.png">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Retail Furniture Store Management system</h3>
+                    <p class="project-description"> Developed a Retail Furniture Store Management System to optimize and automate
+                        daily operations, including product management, inventory tracking, sales, and customer
+                        relationship management, enhancing operational efficiency and customer service quality.</p>
+                    <div class="project-links">
+                        <div class="layer-link"></div>
+                        <a class="project-link" target="_blank" href="https://github.com/DTTri/Furniture-Store-Management-FE">View work</a>
+                        <img class="project-icon" src="src/assets/arrow.svg" alt="Arrow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div id="portfolio" class="fade-in">
     <div class="container">
         <h1 class="sub-title">Projects</h1>
         <div class="work-list">
             <div class="work">
-                <img src="src/work-1.png">
+                <img src="src/assets/work-1.png">
                 <div class="layer">
                     <h3>Retail furniture store management system</h3>
                     <a target="_blank" href="https://github.com/DTTri/Furniture-Store-Management-FE"><i class="fa-solid fa-link"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="src/work-2.png">
+                <img src="src/assets/work-2.png">
                 <div class="layer">
                     <h3>BetterTOEIC</h3>
                     <a target="_blank" href="https://bettertoeic.id.vn/"><i class="fa-solid fa-link"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img style="object-fit: contain; object-position: center;" src="src/work-3.png">
+                <img style="object-fit: contain; object-position: center;" src="src/assets/work-3.png">
                 <div class="layer">
                     <h3>EduForum</h3>
                     <a target="_blank" href="https://github.com/UITSE-500bros/EduForum"><i class="fa-solid fa-link"></i></a>
@@ -102,33 +158,7 @@
         </div>
         <a href="#" class="btn">See more</a>
     </div>
-</div>
-
-<div id="services" class="fade-in">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-crop-simple"></i>
-                <h2>UI/UX Design</h2>
-                <p>My proficiency in UI/UX design is marked by my ability to create visually 
-                captivating and user-centric interfaces that elevate the overall user experience.</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Development</h2>
-                <p>I excel in web development, creating visually appealing and user-friendly 
-                websites with expertise in front-end and back-end technologies.</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <h2>App Development</h2>
-                <p> I possess strong skills in app development, specializing in mobile and cross-platform
-                 applications, transforming creative ideas into functional and intuitive user experiences.</p>
-            </div>
-        </div>
-    </div>
-</div>
+</div> -->
 
 <div id="contact" class="fade-in">
     <div class="container">
@@ -141,7 +171,6 @@
                     <a href="https://www.linkedin.com/in/thinh-nguyen-a990b232a/"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/VinhThinh0804"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <a href="src/NguyenTrinhVinhThinhCV.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
@@ -152,9 +181,6 @@
                 </form>
             </div>
         </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright @VinhThinh0804 Made with <i class="fa-solid fa-heart"></i> </p>
     </div>
 </div>
 
